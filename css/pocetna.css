@@ -1,0 +1,150 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* min-width: 1104px; */
+}
+
+h1 {
+    font-size: 5rem;
+    margin: 10px;
+}
+
+.meni {
+    width: 100%;
+    height: 5rem;
+    background-color: #fff6b7;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+}
+
+.meni .logo {
+    width: 45%;
+    justify-content: center;
+    margin-right: 15%;
+}
+
+.meni .linkovi {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.meni .linkovi a {
+    margin: auto;
+    padding: 2px;
+    text-decoration: none;
+    color: #055a97;
+}
+
+.meni .linkovi a:hover {
+    color: #5dbbff;
+    text-shadow: #055a97;
+}
+
+#meniLogo {
+    width: 5rem;
+    height: 5rem;
+    margin: auto;
+    display: block;
+}
+
+.glavniDeo {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-color: black;
+    background-image: url(../img/pozadina.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding-top: 5rem;
+    /* KAKO DA SE SLIKA POMERA TJ BUDE RESPONZIVNA? */
+}
+
+.glavniDeo .tekstPocetna {
+    margin: auto;
+    padding: 1.5rem;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#gif {
+    width: 6rem;
+    height: 6rem;
+    margin: auto;
+}
+
+.futer {
+    width: 100%;
+    height: 18rem;
+    background-color: #fff6b7;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.futer .leviDeo {
+    width: 30%;
+}
+
+.futer .centralniDeo {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 10px;
+}
+
+
+#futerLogo {
+    width: 12rem;
+    height: 12rem;
+    margin: auto;
+    display: block;
+}
+
+.futer .desniDeo {
+    width: 30%;
+}
+
+.btn {
+    background: #fff7b7;
+    background-image: -webkit-linear-gradient(top, #fff7b7, #e6d14c);
+    background-image: -moz-linear-gradient(top, #fff7b7, #e6d14c);
+    background-image: -ms-linear-gradient(top, #fff7b7, #e6d14c);
+    background-image: -o-linear-gradient(top, #fff7b7, #e6d14c);
+    background-image: linear-gradient(to bottom, #fff7b7, #e6d14c);
+    -webkit-border-radius: 18;
+    -moz-border-radius: 18;
+    border-radius: 18px;
+    text-shadow: 2px 2px 5px #170217;
+    font-family: 'Poppins', sans-serif;
+    color: #004e85;
+    font-size: 24px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: none;
+}
+
+.btn:hover {
+    background: #e6d14c;
+    background-image: -webkit-linear-gradient(top, #e6d14c, #fff7b7);
+    background-image: -moz-linear-gradient(top, #e6d14c, #fff7b7);
+    background-image: -ms-linear-gradient(top, #e6d14c, #fff7b7);
+    background-image: -o-linear-gradient(top, #e6d14c, #fff7b7);
+    background-image: linear-gradient(to bottom, #e6d14c, #fff7b7);
+    text-decoration: none;
+}
