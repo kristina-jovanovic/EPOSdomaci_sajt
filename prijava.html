@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Upoznajte Bahame!</title>
+    <link rel="icon" href="img/palma-01.png">
+
+    <link rel="stylesheet" href="css/zaSve.css">
+    <link rel="stylesheet" href="css/prijava.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- MENI -->
+    <nav class="meni">
+
+        <div class="logo">
+            <a href="index.html"><img id="meniLogo" src="img/logozuti.png" alt="BahamiLogo"></a> 
+        </div>
+
+        <div class="linkovi">
+            <a href="zanimljivosti.html">Zanimljivosti</a>
+            <a href="oNama.html">O nama</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="prijava.html">Prijava</a>
+        </div>
+    </nav>
+
+    <!-- GLAVNI DEO -->
+    <section class="drugiDeo">
+
+        <h2>Pošaljite nam poruku i putujte sa nama!</h2>
+
+        <div class="prijava">
+            
+            <!-- <form class="forma" action="">
+                <label for="ime">Ime:</label>
+                <input type="text" id="ime" placeholder="Unesite Vaše ime...">
+
+                <label for="prezime">Prezime:</label>
+                <input type="text" id="prezime" placeholder="Unesite Vaše prezime...">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="Unesite Vašu e-mail adresu...">
+
+                <label for="poruka">Poruka:</label>
+                <textarea name="poruka" id="poruka" cols="30" rows="10" placeholder="Unesite poruku..."></textarea>
+                
+                <div class="dugmici">
+                    <input type="submit" class="dugme" value="Pošalji">
+                    <input type="reset" class="dugme" value="Resetuj">
+                </div>
+            </form> -->
+
+            <table class="tabela">
+                <tr>
+                    <td><label for="ime">Ime i prezime:</label></td>
+                    <td><input type="text" id="ime" placeholder="Unesite Vaše ime i prezime..."></td>
+                </tr>
+                <tr>
+                    <td><label for="email">E-mail adresa:</label></td>
+                    <td><input type="email" name="email" id="email" placeholder="Unesite Vašu e-mail adresu..."></td>
+                </tr>
+                <tr>
+                    <td><label for="pol">Vrsta prtljaga:</label></td>
+                    <td><input id="prtljag" type="radio" name="prtljag"> Ručni prtljag <input id="prtljag" type="radio" name="prtljag"> Kofer</td>
+                </tr>
+                <tr>
+                    <td><label for="brojPutnika">Broj putnika:</label></td>
+                    <td><input type="number" name="brojPutnika" id="brojPutnika" placeholder="Unesite broj putnika..." min="1"></td>
+                </tr>
+                <tr>
+                    <td><label for="datum">Datum polaska:</label></td>
+                    <td><input type="date" name="datum" id="datum"></td>
+                </tr>
+                <tr>
+                    <td><label for="poruka">Poruka:</label></td>
+                    <td><input type="text" placeholder="Unesite poruku..."></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" class="dugme" value="Pošalji"></td>
+                    <td><input type="reset" class="dugme" value="Resetuj"></td>
+                </tr>
+            </table>
+
+
+            <img src="img/mapa.png" alt="Mapa sveta" id="svet">
+        </div>
+
+    </section>
+
+
+    <!-- FUTER -->
+    <footer class="futer">
+        <div class="leviDeo">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nostrum, earum repellat quos ratione veritatis deleniti quis facilis doloribus. Sapiente quos optio corporis! Ex animi, eius repudiandae mollitia rerum aspernatur.</p>
+        </div>
+
+        <div class="centralniDeo">
+            <a href="index.html"><img id="futerLogo" src="img/logozuti.png" alt="BahamiLogo"></a> 
+            <p>© 2022 Elektronsko poslovanje - domaći zadatak 2 <br>💙KAS💙</p>
+        </div>
+
+        <div class="desniDeo">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officia porro ea ullam qui quas voluptatibus facere architecto reiciendis cupiditate placeat, facilis, ad tenetur delectus, natus mollitia aut eius est?</p>
+        </div>
+
+    </footer>
+    
+
+    <script src="js/pocetna.js"></script>
+</body>
+</html>
