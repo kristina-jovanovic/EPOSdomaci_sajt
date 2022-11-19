@@ -37,15 +37,10 @@ form.addEventListener('submit', (e) => {
         indicator = false
     }
 
-    // if (messagesOne.value === '') {
-    //     messages.push('Poruka je kraca od 10 karaktera')
-    //     window.alert('Unesite poruku')
-    //     indicator=false
-    // }
     if (poruka.length > 0) {
         e.preventDefault()
 
     }
     if (indicator)
-        window.alert('Uneti podaci: \n' + ime.value + '\n' + prezime.value + '\n' + email.value + '\n' + '\nUSPESNO POSLATO!')
+        window.alert('Uneti podaci: \n' + ime.value + '\n' + prezime.value + '\n' + email.value + '\n' + '\nUSPEŠNO POSLATO!')
 })
