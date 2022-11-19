@@ -15,91 +15,105 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <!-- MENI -->
-    <nav class="meni">
-
-        <div class="logo">
-            <a href="index.html"><img id="meniLogo" src="img/logozuti.png" alt="BahamiLogo"></a> 
+    <header class="header">
+        <div class="zaglavlje-logo">
+          <a href="index.html" class="logo">
+            <img id="meniLogo" src="img/logozuti.png" alt="Logo" class="slikaHeader" />
+          </a>
+          <a href="#" class="toggle-button">
+            <img src="img/meni" alt="meni" height="80px" width="80px">
+          </a>
         </div>
-
-        <div class="linkovi">
-            <a href="zanimljivosti.html">Zanimljivosti</a>
-            <a href="oNama.html">O nama</a>
-            <a href="kontakt.html">Kontakt</a>
-            <a href="prijava.html">Prijava</a>
+        <!-- 
+        hamburger menu -->
+  
+        
+        <div class="meni_bar">
+          <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="zanimljivosti.html">Zanimljivosti</a></li>
+            <li><a href="oNama.html">O nama</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="prijava.html">Prijava</a></li>
+          </ul>
         </div>
-    </nav>
+      </header>
 
     <!-- GLAVNI DEO -->
     <section class="drugiDeo">
 
-        <h2>Pošaljite nam poruku i putujte sa nama!</h2>
-
         <div class="prijava">
             
-            <!-- <form class="forma" action="">
-                <label for="ime">Ime:</label>
-                <input type="text" id="ime" placeholder="Unesite Vaše ime...">
+            <h2>Pošaljite nam poruku i putujte sa nama!</h2>
 
-                <label for="prezime">Prezime:</label>
-                <input type="text" id="prezime" placeholder="Unesite Vaše prezime...">
+            <form class="forma" action="">
+                
+                <div class="deoForme">
+                    <label for="ime" class="label">Ime:</label>
+                    <input class="unos" type="text" id="ime" placeholder="Unesite Vaše ime..." >
+                </div>
 
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" placeholder="Unesite Vašu e-mail adresu...">
+                <div class="deoForme">
+                    <label for="prezime" >Prezime:</label>
+                    <input class="unos" type="text" id="prezime" placeholder="Unesite Vaše prezime...">
+                </div>
 
-                <label for="poruka">Poruka:</label>
-                <textarea name="poruka" id="poruka" cols="30" rows="10" placeholder="Unesite poruku..."></textarea>
+                <div class="deoForme">
+                    <label for="email">E-mail:</label>
+                    <input class="unos" type="email" id="email" placeholder="Unesite Vašu e-mail adresu...">
+                </div>
+
+                <div class="deoForme">
+                    <label for="prtljag" >Vrsta prtljaga:</label>
+                    <div class="unos">
+                        <input id="prtljag" type="radio" name="prtljag"> Ručni prtljag 
+                        <input id="prtljag" type="radio" name="prtljag"> Kofer
+                    </div>
+                    
+                </div>
+
+                <div class="deoForme">
+                    <label for="soba">Izaberite sobu:</label>
+
+                    <select class="unos" name="soba" id="soba">
+                        <option value="jednokrevetna">jednokrevetna</option>
+                        <option value="dvokrevetna">dvokrevetna</option>
+                        <option value="trokrevetna">trokrevetna</option>
+                        <option value="cetvorokrevetna">četvorokrevetna</option>
+                    </select>   
+                </div>
+
+                <div class="deoForme">
+                    <label for="datum" >Datum polaska:</label>
+                    <input class="unos" type="date" name="datum" id="datum"> 
+                </div>
+
+                <div class="deoForme">
+                    <label for="poruka" >Poruka:</label>
+                    <textarea class="unos" name="poruka" class="poruka" id="poruka" cols="10" rows="6" placeholder="Unesite poruku..."></textarea>
+                </div>
                 
                 <div class="dugmici">
-                    <input type="submit" class="dugme" value="Pošalji">
-                    <input type="reset" class="dugme" value="Resetuj">
+                    <button type="submit" class="dugme" value="Pošalji">Pošalji</button>
+                    <button type="reset" class="dugme" value="Resetuj">Resetuj</button>
                 </div>
-            </form> -->
-
-            <table class="tabela">
-                <tr>
-                    <td><label for="ime">Ime i prezime:</label></td>
-                    <td><input type="text" id="ime" placeholder="Unesite Vaše ime i prezime..."></td>
-                </tr>
-                <tr>
-                    <td><label for="email">E-mail adresa:</label></td>
-                    <td><input type="email" name="email" id="email" placeholder="Unesite Vašu e-mail adresu..."></td>
-                </tr>
-                <tr>
-                    <td><label for="pol">Vrsta prtljaga:</label></td>
-                    <td><input id="prtljag" type="radio" name="prtljag"> Ručni prtljag <input id="prtljag" type="radio" name="prtljag"> Kofer</td>
-                </tr>
-                <tr>
-                    <td><label for="brojPutnika">Broj putnika:</label></td>
-                    <td><input type="number" name="brojPutnika" id="brojPutnika" placeholder="Unesite broj putnika..." min="1"></td>
-                </tr>
-                <tr>
-                    <td><label for="datum">Datum polaska:</label></td>
-                    <td><input type="date" name="datum" id="datum"></td>
-                </tr>
-                <tr>
-                    <td><label for="poruka">Poruka:</label></td>
-                    <td><input type="text" placeholder="Unesite poruku..."></td>
-                </tr>
-                <tr>
-                    <td><input type="submit" class="dugme" value="Pošalji"></td>
-                    <td><input type="reset" class="dugme" value="Resetuj"></td>
-                </tr>
-            </table>
-
+                
+            </form>
 
             <img src="img/mapa.png" alt="Mapa sveta" id="svet">
         </div>
 
-    </section>
-
-
     <!-- FUTER -->
     <footer class="futer">
         <div class="leviDeo">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nostrum, earum repellat quos ratione veritatis deleniti quis facilis doloribus. Sapiente quos optio corporis! Ex animi, eius repudiandae mollitia rerum aspernatur.</p>
+            <a href="zanimljivosti.html">Zanimljivosti</a>
+            <a href="oNama.html">O nama</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="prijava.html">Prijava</a>
         </div>
 
         <div class="centralniDeo">
@@ -108,12 +122,22 @@
         </div>
 
         <div class="desniDeo">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officia porro ea ullam qui quas voluptatibus facere architecto reiciendis cupiditate placeat, facilis, ad tenetur delectus, natus mollitia aut eius est?</p>
+            <div class="infoFuter">
+                <i class="fa-solid fa-phone"></i>
+                <p>+ 381  60 123 4567
+                    <br>+ 381 60 765 4321</p>
+            </div>
+            <div class="infoFuter">
+                <i class="fas fa-envelope"></i>
+                <p>office@bahami.rs
+                <br>hr@bahami.rs</p>
+            </div>
         </div>
 
     </footer>
     
-
-    <script src="js/pocetna.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="js/prijava.js"></script>
 </body>
+
 </html>

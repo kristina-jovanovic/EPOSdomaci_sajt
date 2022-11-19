@@ -4,41 +4,142 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O nama</title>
+
+    <title>Upoznajte Bahame!</title>
+    <link rel="icon" href="img/palma-01.png">
+
     <link rel="stylesheet" href="css/zaSve.css">
+    <link rel="stylesheet" href="css/oNama.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
-     <!-- MENI -->
-     <nav class="meni">
-
-        <div class="logo">
-            <img id="meniLogo" src="img/logozuti.png" alt="BahamiLogo">
-        </div>
-
-        <div class="linkovi">
-            <a href="zanimljivosti.html">Zanimljivosti</a>
-            <a href="oNama.html">O nama</a>
-            <a href="kontakt.html">Kontakt</a>
-            <a href="prijava.html">Prijava</a>
-        </div>
-    </nav>
-    <footer class="futer">
-        <div class="leviDeo">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nostrum, earum repellat quos ratione veritatis deleniti quis facilis doloribus. Sapiente quos optio corporis! Ex animi, eius repudiandae mollitia rerum aspernatur.</p>
-        </div>
-
-        <div class="centralniDeo">
-            <a href="index.html"><img id="futerLogo" src="img/logozuti.png" alt="BahamiLogo"></a> 
-            <p>© 2022 Elektronsko poslovanje - domaći zadatak 2 <br>💙KAS💙</p>
-        </div>
-
-        <div class="desniDeo">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officia porro ea ullam qui quas voluptatibus facere architecto reiciendis cupiditate placeat, facilis, ad tenetur delectus, natus mollitia aut eius est?</p>
-        </div>
-
-    </footer>
     
+  <!-- MENI -->
+  <header class="header">
+    <div class="zaglavlje-logo">
+      <a href="index.html" class="logo">
+        <img src="img/logozuti.png" alt="Logo" class="slikaHeader" />
+      </a>
+      <a href="#" class="toggle-button">
+        <img id="meniLogo" src="img/meni" alt="meni" height="80px" width="80px">
+      </a>
+    </div>
+    <!-- 
+    hamburger menu -->
 
-    <script src="js/pocetna.js"></script>
+    
+    <div class="meni_bar">
+      <ul>
+        <li><a href="index.html">Početna</a></li>
+        <li><a href="zanimljivosti.html">Zanimljivosti</a></li>
+        <li><a href="oNama.html">O nama</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="prijava.html">Prijava</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- GLAVNI DEO -->
+  <div class="uvod">
+        
+    <div class="uvodTekst">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ducimus nihil veniam molestiae, accusamus magni cum explicabo! Placeat provident, deserunt ipsum sint error explicabo eveniet dicta, similique, nemo delectus officia!
+      </p>
+    </div>
+      
+    <div class="oNama">
+      <!-- leva strana ime -->
+      <div class="komponenta">
+        <div class="ime ime--right">
+          <h4 id="h4ime">Stefana Kostić</h4>
+          <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p> -->
+        </div> 
+      </div>
+
+      <div class="sredina">
+        <div class="krug"></div>
+      </div>
+  
+      <div class="komponenta komponenta--pozadina proba">
+        <img class="slika" src="img/stefana.jpg" alt="">
+      </div>
+  
+      <!-- nova komponenta desna strana ime-->
+  
+      <div class="komponenta komponenta--pozadina proba">
+          
+        <img class="slika" src="img/andjela.jpg" alt="">
+      </div>
+  
+      <div class="sredina">
+        <div class="krug"></div>
+      </div>
+  
+      <div class="komponenta">
+        <div class="ime">
+          <h4 id="h4ime">Anđela Kovačević</h4>
+          <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p> -->
+        </div>
+      </div>    
+  
+       
+      <div class="komponenta komponenta--kraj">
+        <div class="ime ime--right">
+          <h4 id="h4ime">Kristina Jovanović</h4>
+            <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p> -->
+        </div>
+      </div>
+
+      <div class="sredina">
+        <div class="krug"></div>
+        <!--  ovo ide na poslednjoj komp -->
+        <div class="krug krug--kraj"></div>
+      </div>
+    
+      <div class="komponenta komponenta--pozadina komponenta--kraj proba">
+        <img class="slika" src="img/kristina.jpg" alt="">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FUTER -->
+  <footer class="futer">
+    <div class="leviDeo">
+        <a href="zanimljivosti.html">Zanimljivosti</a>
+        <a href="oNama.html">O nama</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="prijava.html">Prijava</a>
+    </div>
+
+    <div class="centralniDeo">
+        <a href="index.html"><img id="futerLogo" src="img/logozuti.png" alt="BahamiLogo"></a> 
+        <p>© 2022 Elektronsko poslovanje - domaći zadatak 2 <br>💙KAS💙</p>
+    </div>
+
+    <div class="desniDeo">
+        <div class="infoFuter">
+            <i class="fa-solid fa-phone"></i>
+            <p>+ 381  60 123 4567
+                <br>+ 381 60 765 4321</p>
+        </div>
+        <div class="infoFuter">
+            <i class="fas fa-envelope"></i>
+            <p>office@bahami.rs
+            <br>hr@bahami.rs</p>
+        </div>
+    </div>
+
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+  <script src="js/oNama.js" ></script>
+    
 </body>
+
 </html>

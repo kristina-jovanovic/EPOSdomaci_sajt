@@ -25,19 +25,16 @@ h1 {
 }
 
 .meni .logo {
-    width: 45%;
+    width: 10%;
     justify-content: center;
-    margin-right: 15%;
 }
 
 
 .meni .linkovi {
-    width: 30%;
     display: flex;
     justify-content: center;
     text-transform: uppercase;
     font-weight: bold;
-
 }
 
 .meni .linkovi a {
@@ -59,6 +56,9 @@ h1 {
     display: block;
 }
 
+#meniLogo:hover {
+    cursor: pointer;
+}
 
 #gif {
     width: 6rem;
@@ -79,6 +79,22 @@ h1 {
 
 .futer .leviDeo {
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.futer .leviDeo a {
+    margin: auto;
+    padding: 2px;
+    text-decoration: none;
+    color: #055a97;
+}
+
+.futer .leviDeo a:hover {
+    color: #5dbbff;
+    text-shadow: #055a97;
 }
 
 .futer .centralniDeo {
@@ -97,6 +113,241 @@ h1 {
     display: block;
 }
 
+#futerLogo:hover {
+    cursor: pointer;
+}
+
 .futer .desniDeo {
     width: 30%;
+}
+
+.infoFuter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoFuter p {
+    text-align: center;
+}
+
+/* HAMBURGER MENI */
+/* a {
+
+    text-decoration: none;
+
+    color: black;
+
+    cursor: pointer;
+
+} */
+
+.toggle-button {
+    visibility: hidden;
+}
+
+/* .linkovi {
+
+    background-color: #684129(102, 197, 165);
+
+    text-align: center;
+
+    margin: auto;
+
+}
+
+.linkovi ul {
+
+    display: inline-flex;
+
+    list-style: none;
+
+    color: black;
+
+}
+
+.linkovi ul li {
+
+    width: 170px;
+
+    margin: 15px;
+
+    padding: 15px;
+
+    font-weight: bold;
+
+}
+
+.linkovi ul li a:hover {
+
+    color: whitesmoke;
+
+} */
+
+.zaglavlje-logo {
+    background-color: #fff6b7;
+    flex-direction: row;
+    display: flex;
+    /* margin: auto; */
+    justify-content: center;
+    /* position: fixed;
+    width: 100%; */
+}
+
+/* .slikaHeader {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #c9f9fa;
+    cursor: pointer;
+}
+
+.meni_bar {
+    background-color: #055a97;
+    text-align: center;
+    margin: auto;
+}
+
+.meni_bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: black;
+    margin: 0;
+}
+
+.meni_bar ul li {
+    width: 170px;
+    margin: 15px;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.meni_bar ul li a:hover {
+    color: whitesmoke;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* RESPONZIVNOST FUTER */
+
+@media only screen and (max-width: 844px) {
+
+    .futer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .futer .leviDeo {
+        width: 95%;
+        padding: 5px;
+    }
+
+    .futer .centralniDeo {
+        width: 95%;
+        padding: 5px;
+    }
+
+    .futer .desniDeo {
+        width: 95%;
+        padding: 5px;
+    }
+
+    #futerLogo {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    /* za hamburger menu*/
+
+    .zaglavlje-logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .toggle-button {
+        visibility: visible;
+    }
+
+
+    .linkovi {
+        display: none;
+        width: 100%;
+        visibility: hidden;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .linkovi ul {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .linkovi li {
+        text-align: center;
+    }
+
+    .linkovi li a {
+        padding: 0.5rem 1rem;
+    }
+
+    .linkovi.active {
+        display: flex;
+    }
+
+    .linkovi ul li:hover .podmeniProizovda ul {
+        display: none;
+    }
+
+    /* ++++++++ */
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .meni_bar {
+        display: none;
+        width: 100%;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .meni_bar ul {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .meni_bar li {
+        text-align: center;
+    }
+
+    .meni_bar li a {
+        padding: 0.5rem 1rem;
+    }
+
+    .meni_bar.active {
+        display: flex;
+    }
+
+    .meni_bar ul li:hover .podmeniProizovda ul {
+        display: none;
+    }
 }

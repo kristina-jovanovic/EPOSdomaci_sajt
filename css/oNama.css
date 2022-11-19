@@ -1,0 +1,127 @@
+body {
+    background: #c9f9fa;
+    color: #055a97;
+    font-family: 'Poppins', sans-serif;
+}
+
+.uvod {
+    margin-top: 5rem;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.uvodTekst {
+    width: 60%;
+    margin-left: 20%;
+    padding-top: 4rem;
+}
+
+.oNama {
+    margin: 50px auto;
+    /*za postavljanje hrozontalnog i centralnog dela*/
+    /* max-width: 750px; */
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+    /*3 kolone gde je ova u sredini samo linija koja deli ove dve sa strane */
+}
+
+.komponenta {
+    margin: 0 20px 40px 20px;
+    /* width: 12rem; */
+}
+
+.komponenta--pozadina {
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.komponenta--kraj {
+    margin-bottom: 0;
+}
+
+.komponenta .ime {
+    margin: 0;
+}
+
+.naslov {
+    margin: 0;
+    font-size: 1.15em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.slika {
+    /* line-height: 1.5; */
+    /* text-align: center; */
+    width: 10rem;
+    height: 10rem;
+    margin: auto;
+    display: block;
+}
+
+.ime--right {
+    text-align: right;
+}
+
+.sredina {
+    position: relative;
+    background: white;
+    z-index: -1;
+}
+
+.krug {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    /*sad ce da se nalazi tacno na sredini linije*/
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    /*sad se napravio kao krug*/
+}
+
+.krug--kraj {
+    top: initial;
+    bottom: 0;
+}
+
+/*Animacija za tekstove na strani*/
+.proba:hover {
+    width: 10rem;
+    /* transform: rotate(360deg);  */
+    transform: scale(1.5);
+}
+
+.ime h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 844px) {
+
+    .oNama {
+        width: 100%;
+        padding: 0;
+    }
+
+    .slika {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    #h4ime {
+        font-size: 1.1rem;
+    }
+
+    .komponenta {
+        margin: 0 10px 25px 10px;
+    }
+}

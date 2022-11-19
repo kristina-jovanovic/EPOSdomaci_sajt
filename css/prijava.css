@@ -1,14 +1,14 @@
 .drugiDeo {
     background-color: #c98860;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
     color: #055a97;
-    margin-top: 5rem;
-    padding-bottom: 3rem;
+    /* margin-top: 5rem;
+    padding-bottom: 3rem; */
     align-items: center;
     vertical-align: middle;
 }
@@ -18,10 +18,46 @@
     text-align: center;
     font-size: 20px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
+    padding: 5rem;
 
+    /* margin-top: 750px; */
+    /* rebus */
+}
+
+.forma {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    border-collapse: collapse;
+    background-color: #fff6b7;
+    filter: drop-shadow(0 10px 10px #684129);
+    border-radius: 5%;
+    align-items: center;
+
+    width: 55%;
+    padding: 2%;
+}
+
+.deoForme {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    padding: 0.2rem;
+}
+
+.deoForme label {
+    display: block;
+    width: 40%;
+}
+
+.deoForme .unos {
+    width: 60%;
 }
 
 h2 {
@@ -55,11 +91,6 @@ h2 {
     padding: 1.5rem;
 }
 
-/* .dugmici {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-} */
 
 input {
     width: 15rem;
@@ -74,17 +105,6 @@ input {
     height: auto;
 }
 
-/* label {
-    text-transform: uppercase; 
-    padding-left: 6rem;
-
-} */
-
-/* #pismo {
-    width: 100%;
-    height: auto;
-    max-width: 10vw;
-} */
 
 #svet {
     /* padding-top: 200px;
@@ -95,30 +115,10 @@ input {
     width: 45rem;
 }
 
-/* #email {
-    width: 90%;
-    height: 4vh;
-    margin-top: 1.3vh;
-    margin-bottom: 1.3vh;
+.dugmici {
+    width: 100%;
+    justify-content: space-between;
 }
-
-#ime {
-    width: 90%;
-    height: 4vh;
-    margin-top: 1.3vh;
-    margin-bottom: 1.3vh;
-}
-
-#prezime {
-    width: 90%;
-    height: 4vh;
-    margin-top: 1.3vh;
-    margin-bottom: 1.3vh;
-}
-
-#komentari {
-    width: 90%;
-} */
 
 .dugme {
     border-radius: 5%;
@@ -131,8 +131,35 @@ input {
     font-weight: bold;
     color: #055a97;
     font-size: 1rem;
+    margin: 5px;
+    width: 20%;
 }
 
 .dugme:hover {
     background-color: #c98860;
+}
+
+.unos {
+    justify-content: center;
+}
+
+@media only screen and (max-width: 844px) {
+
+    .forma {
+        width: 90%;
+    }
+
+    .deoForme {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    #svet {
+        height: 25rem;
+        width: 25rem;
+    }
+
 }

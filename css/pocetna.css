@@ -12,16 +12,14 @@ h1 {
     margin: 10px;
 }
 
-.meni {
+/* .meni {
     width: 100%;
     height: 5rem;
     background-color: #fff6b7;
     display: flex;
     flex-direction: row;
     position: fixed;
-    /* backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(15px); */
-
+    
 }
 
 .meni .logo {
@@ -56,11 +54,11 @@ h1 {
     height: 5rem;
     margin: auto;
     display: block;
-}
+} */
 
 .glavniDeo {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     color: white;
     background-color: black;
     background-image: url(../img/pozadina.jpg);
@@ -88,7 +86,7 @@ h1 {
     margin: auto;
 }
 
-.futer {
+/* .futer {
     width: 100%;
     height: 18rem;
     background-color: #fff6b7;
@@ -120,7 +118,7 @@ h1 {
 
 .futer .desniDeo {
     width: 30%;
-}
+} */
 
 .btn {
     background: #fff7b7;
@@ -151,4 +149,15 @@ h1 {
     background-image: -o-linear-gradient(top, #e6d14c, #fff7b7);
     background-image: linear-gradient(to bottom, #e6d14c, #fff7b7);
     text-decoration: none;
+}
+
+@media only screen and (max-width: 844px) {
+
+    #naslov {
+        font-size: 2rem;
+    }
+
+    .btn {
+        font-size: 18px;
+    }
 }
