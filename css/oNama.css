@@ -5,7 +5,6 @@ body {
 }
 
 .uvod {
-    margin-top: 5rem;
     width: 100%;
     text-align: center;
     display: flex;
@@ -30,7 +29,6 @@ body {
 
 .komponenta {
     margin: 0 20px 40px 20px;
-    /* width: 12rem; */
 }
 
 .komponenta--pozadina {
@@ -57,8 +55,6 @@ body {
 }
 
 .slika {
-    /* line-height: 1.5; */
-    /* text-align: center; */
     width: 10rem;
     height: 10rem;
     margin: auto;
@@ -80,12 +76,11 @@ body {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    /*sad ce da se nalazi tacno na sredini linije*/
+    /*nalazi se tacno na sredini linije*/
     width: 15px;
     height: 15px;
     background: white;
     border-radius: 50%;
-    /*sad se napravio kao krug*/
 }
 
 .krug--kraj {
@@ -93,10 +88,9 @@ body {
     bottom: 0;
 }
 
-/*Animacija za tekstove na strani*/
+/*Animacija za slike*/
 .proba:hover {
     width: 10rem;
-    /* transform: rotate(360deg);  */
     transform: scale(1.5);
 }
 
@@ -115,6 +109,11 @@ body {
     .slika {
         width: 7rem;
         height: 7rem;
+    }
+
+    .proba:hover {
+        width: 8rem;
+        transform: scale(1.0);
     }
 
     #h4ime {

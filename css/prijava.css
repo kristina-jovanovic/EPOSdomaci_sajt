@@ -7,8 +7,6 @@
     justify-content: center;
     font-family: 'Poppins', sans-serif;
     color: #055a97;
-    /* margin-top: 5rem;
-    padding-bottom: 3rem; */
     align-items: center;
     vertical-align: middle;
 }
@@ -23,9 +21,6 @@
     justify-content: center;
     width: 100%;
     padding: 5rem;
-
-    /* margin-top: 750px; */
-    /* rebus */
 }
 
 .forma {
@@ -67,31 +62,6 @@ h2 {
     font-size: 2rem;
 }
 
-.tabela {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    height: 100%;
-    justify-content: space-evenly;
-    /* width: 100%; */
-
-    align-items: center;
-    border: 0;
-    table-layout: auto;
-    /* width: 100%; */
-    border-collapse: collapse;
-    background-color: #fff6b7;
-    filter: drop-shadow(0 10px 10px #684129);
-    border-radius: 5%;
-}
-
-.tabela td {
-    width: 50%;
-    text-align: left;
-    padding: 1.5rem;
-}
-
-
 input {
     width: 15rem;
     height: 3rem;
@@ -99,25 +69,21 @@ input {
     color: #055a97;
 }
 
-
 #prtljag {
     width: auto;
     height: auto;
 }
 
-
 #svet {
-    /* padding-top: 200px;
-    width: 20vw;
-    height: 50vh;
-    flex: 1; */
     height: 45rem;
     width: 45rem;
 }
 
 .dugmici {
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    display: flex;
+    margin: 5% 0 2% 0;
 }
 
 .dugme {
@@ -158,8 +124,68 @@ input {
     }
 
     #svet {
-        height: 25rem;
-        width: 25rem;
+        height: 23rem;
+        width: 23rem;
     }
 
+    .prijava {
+        padding: 0;
+    }
+
+}
+
+.shape {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    transform: scale(0.8);
+}
+
+.cir {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.btn-contain {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 5%;
+    margin-left: 50%;
+    height: 50px;
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    text-align: center;
+    z-index: 10;
+    transition: 0.2s;
+    cursor: pointer;
+    box-shadow: 0px 1px 5px 2px #684129;
+
+    width: 100px;
+}
+
+.btn:hover {
+    outline: none !important;
+    color: white;
+}
+
+.btn-particles {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    color: #eee;
+    font-family: monospace;
+    z-index: 5;
+}
+
+.btn:active {
+    transform: scale(0.9) translate(-55%, -55%);
 }
