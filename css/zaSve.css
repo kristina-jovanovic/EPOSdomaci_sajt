@@ -93,6 +93,32 @@ h1 {
     text-align: center;
 }
 
+/*DUGME ZA VRACANJE NA VRH STRANE*/
+#back-to-the-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 26px;
+    height: 55px;
+    background-color: #055a97;
+    cursor: pointer;
+    outline: none;
+    border: 3px solid black;
+    border-radius: 50%;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color, color;
+
+    z-index: 100;
+}
+
+#back-to-the-top:hover,
+#back-to-the-top:focus {
+    background-color: #3990ce;
+    border: 3px solid black;
+}
+
 /* HAMBURGER MENI */
 
 .toggle-button {
